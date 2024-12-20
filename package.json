@@ -1,0 +1,24 @@
+{
+  "name": "prodtolocalapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:proxy": "node index.js",
+    "serve": "npx browser-sync start --proxy localhost:3000 --port 1337 --https --host web.develop.danskespil.dk --open external",
+    "reset": "taskkill /F /IM node.exe",
+    "start": "concurrently \"npm run start:proxy\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "concurrently": "^9.1.0"
+  }
+}
