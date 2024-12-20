@@ -8,7 +8,6 @@
     "reset": "taskkill /F /IM node.exe",
     "start": "concurrently \"npm run start:proxy\" \"npm run serve\""
   },
-  "description": "",
   "dependencies": {
     "axios": "^1.7.9",
     "cors": "^2.8.5",
