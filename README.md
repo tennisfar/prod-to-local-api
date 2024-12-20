@@ -1,31 +1,18 @@
 # ProdToLocalApi
 
-## Requirements
-To make `web.develop.danskespil.dk` point to your local machine, you need to update your hosts file.
-
-### On Windows:
-1. Open Notepad as Administrator.
-2. Open the file `C:\Windows\System32\drivers\etc\hosts`.
-3. Add the following line:
-   ```
-   127.0.0.1 web.develop.danskespil.dk
-   ```
-
-## Installation
-1. Install the dependencies:
-   ```sh
-   npm install
-   ```
+## Description
+This project sets up a local proxy server to make production data available locally without encountering CORS and similar issues. It uses an Express server to fetch data from the production API and serves it locally. Additionally, `browser-sync` is used to proxy the local server, making it accessible from a specific domain.
 
 ## Execution
 1. Run the combined script to start both the Express server and `browser-sync`:
    ```sh
    npm start
    ```
-2. Access the Prod Bingo Lobby data served locally from:
+2. Access the available endpoints served locally from:
    ```
-   https://web.develop.danskespil.dk:1337/dli/scapi/danskespil/gamevendorgvc/lobby
+   https://web.develop.danskespil.dk:1337
    ```
+   This page will display a list of all available endpoints, including the "lobby" endpoint and any future endpoints.
 
 ## Usage
 To use the endpoint in your code, you can create a function like this:
