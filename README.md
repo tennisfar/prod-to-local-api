@@ -27,6 +27,14 @@ To make `web.develop.danskespil.dk` point to your local machine, you need to upd
    https://web.develop.danskespil.dk:1337/dli/scapi/danskespil/gamevendorgvc/lobby
    ```
 
+## Usage
+To use the endpoint in your code, you can create a function like this:
+```javascript
+export const getLobbyData = async () => {
+  return await ApiRequest({ url: 'https://web.develop.danskespil.dk:1337/dli/scapi/danskespil/gamevendorgvc/lobby' });
+};
+```
+
 ### Troubleshooting
 If the port is wrong, try killing all stuck or running localhosts:
 ```sh
