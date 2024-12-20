@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start:proxy": "node index.js",
-    "serve": "npx browser-sync start --proxy localhost:3000 --port 1337 --https --host web.develop.danskespil.dk --open external",
+    "serve": "npx browser-sync start --proxy localhost:1336 --port 1337 --https --host web.develop.danskespil.dk --open external",
     "reset": "taskkill /F /IM node.exe",
     "start": "concurrently \"npm run start:proxy\" \"npm run serve\""
   },
