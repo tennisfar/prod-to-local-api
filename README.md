@@ -1,4 +1,4 @@
-# ProdToLocalApi
+# Prod to local API
 
 ## Description
 This project sets up a local proxy server to make production data available locally without encountering CORS and similar issues. It uses an Express server to fetch data from the production API and serves it locally. Additionally, `browser-sync` is used to proxy the local server, making it accessible from a specific domain.
